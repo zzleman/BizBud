@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BizBud</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="./node_modules/aos/dist/aos.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="container">
+        <nav>
+                <a href=""><h2 >BizBud</h2></a>
+                <ul>
+                    <li><a href="#section1" onclick="activateNavItem(event)">Home</a></li>
+                    <li><a href="#section2" onclick="activateNavItem(event)">Services</a></li>
+                    <li><a href="#section3" onclick="activateNavItem(event)">About</a></li>
+                    <li><a href="#section4" onclick="activateNavItem(event)">Testimonials</a></li>
+                    <li><a href="#section5" onclick="activateNavItem(event)">Clients</a></li>
+                    <li><a href="#section6" onclick="activateNavItem(event)">Contact</a></li>
+                </ul>
+                <button>Call Now</button>
+        </nav>
+        <section id="section1"  data-aos="fade-up">
+            <div class="main-page">
+                <p>The Power <br> of Good Advice</p>
+                <p>I'm a paragraph. Click here to add your <br> own text and edit me.</p>
+                <button>Learn More</button>
+            </div>
+        </section>
+        <section id="section2"  data-aos="fade-up">
+            <div class="services">
+                <div class="text-p">
+                    <p>SERVICES</p>
+                    <p>Taking Your Business to <br> the Next Level</p>
+                </div>
+                <div class="options">
+                    <div class="op-1">
+                        <img src="./assets/images/circles.png" alt="">
+                        <p class="head-text">Business Plans</p>
+                        <p>I'm a paragraph. Click here to add <br> your own text and edit me.</p>
+                    </div>
+                    <div class="op-2">
+                        <img src="./assets/images/check.png" alt="">
+                        <p class="head-text">Accounting Services</p>
+                        <p>I'm a paragraph. Click here to add <br> your own text and edit me.</p>
+                    </div>
+                    <div class="op-3">
+                        <img src="./assets/images/squares.jpeg" alt="">
+                        <p class="head-text">Finance Optimizationx</p>
+                        <p>I'm a paragraph. Click here to add <br> your own text and edit me.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="experience" data-aos="fade-up">
+                <p id="exp-p">We’re Good with Numbers</p>
+                <div class="ex-1">
+                    <span>15</span>
+                    <span>36</span>
+                    <span>120</span>
+                    <span>9</span>
+                </div>
+                <div class="ex-2">
+                    <span>Years of Experience</span>
+                    <span>Qualified Experts</span>
+                    <span>Clients Every Year</span>
+                    <span>Intl. Partners</span>
+                </div>
+            </div>
+        </section>
+        <section id="section3"  data-aos="fade-up">
+            <div class="about">
+                <div class="about-left">
+                    <p>ABOUT</p>
+                    <p>Top Experts of the <br> Market</p>
+                    <p>This is a paragraph. Click to add your own text. Click <br>
+                        or double-click “Edit Text” to add your content and <br>
+                        change the font. You can drag and drop this area <br>
+                        anywhere on the page you want. This is a great place <br>
+                        to tell a story and introduce yourself to your users. <br>
+                        This is <br>
+                        a great place to write a long text about your company <br>
+                        and services. You can use this field to provide more <br>
+                        detailed information about your company. Tell your <br>
+                        visitors about your team and the services you offer. <br>
+                        Explain how the idea to start this business came about <br>
+                        and what sets you apart from your competitors. Make <br>
+                        your company stand out and show off to your visitors.</p>
+                </div>
+                <div class="about-right"></div>
+            </div>
+        </section>
+        <section id="section4"  data-aos="fade-up">
+            <div class="slideshow-container">
+
+                <div class="mySlides">
+                  <p>TESTIMONIALS</p>
+                  <q>I'm a testimonial. Click to <br> edit me and add text</q>
+                  <p class="author">Gabriella Spring</p>
+                  <p>Company name</p>
+                </div>
+                
+                <div class="mySlides">
+                    <p>TESTIMONIALS</p>
+                    <q>I'm a testimonial. Click to <br> edit me and add text</q>
+                  <p class="author">Josh Phillips</p>
+                  <p>Company name</p>
+                </div>
+                
+                <div class="mySlides">
+                    <p>TESTIMONIALS</p>
+                    <q>I'm a testimonial. Click to <br> edit me and add text</q>
+                  <p class="author">Louise Maxwell</p>
+                  <p>Company name</p>
+                </div>
+                </div>
+                
+                <div class="dot-container">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+                
+                
+        </section>
+        <section id="section5">
+            <div class="customers">
+                <img src="./assets/images/customers.png" alt="">
+            </div>
+        </section>
+        <section id="section6"  data-aos="fade-up">
+            <div class="contact">
+                <div class="con-left">
+                    <p>Contact</p>
+                    <p>Let’s Work Together</p>
+                    <p>500 Terry Francine St. San Francisco, CA 94158 <br>
+                        info@mysite.com <br></p>
+                        <p>Tel: 123-456-7890</p>
+                        <div class="con-icons">
+                            <i class="fa-brands fa-linkedin-in" style="color: #000000;font-size: 25px;"></i>
+                            <i class="fa-brands fa-facebook-f" style="color: #000000;font-size: 25px;"></i>
+                            <i class="fa-brands fa-twitter" style="color: #000000;font-size: 25px;"></i>
+                        </div>
+                </div>
+                <div class="con-right">
+                    <div class="con-r-1">
+                        <div class="right-f">
+                            <label for="">First Name</label>
+                            <input type="text">
+                        </div>
+                        <div class="right-s">
+                            <label for="">Last Name</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="con-r-2">
+                        <label for="">E-mail *</label>
+                        <input type="text">
+                        <label for="">Leave us a message...</label>
+                        <input type="text">
+                    </div>
+                    <button>Send</button>
+                </div>
+            </div>
+        </section>
+        <div class="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.428490503057!2d49.85137057594642!3d40.377194958044676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d079efb5163%3A0xc20aa51a5f0b5e01!2sCode%20Academy!5e0!3m2!1str!2saz!4v1684687221585!5m2!1str!2saz" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <footer>
+            <p>© 2035, BizNet. <a href="">Created with Wix.com .</a></p>
+            <button class="open-button" onclick="openForm()"><i class="fa-solid fa-comment-dots" style="font-size:30px;"></i></button>
+            <div class="chat-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+            <i class="fa-solid fa-comment-dots"></i>
+            <label for="msg"><b>BizBud</b></label>
+            <p>We’ll reply as soon as we can</p>
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+             <button type="submit" class="btn">Send</button>
+             <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+</div>
+          </footer>
+
+    </div>
+    <script defer src="./assets/scripts/main.js"></script>
+    <script src="./node_modules/aos/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
