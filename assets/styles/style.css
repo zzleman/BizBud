@@ -13,6 +13,10 @@ body{
   min-height: 100vh;
   width: 100%;
 }
+.choose i{
+  font-size: 30px;
+  margin-left: 30px;
+}
 /* Here The Navigation Part */
 nav li.active a {
     color: blueviolet;
@@ -395,11 +399,4 @@ nav li a:hover{
   
   .fade-up {
     animation: fade-up 1s ease-in-out;
-  }
-
-
-  @media (max-width: 600px) {
-    .container{
-        display: none;
-    }
   }

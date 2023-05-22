@@ -1,4 +1,4 @@
-@import url(/mobile.html);
+/* @import url(/mobile.html); */
 /* Global styles */
 * {
     margin: 0;
@@ -9,6 +9,18 @@
   body {
     font-family:"poppins";
   }
+  .all-mobile{
+    width: 30%;
+    display:flex;
+    flex-direction: column;
+    border: 10px solid gray;
+    margin-left: 35%;
+  }
+  .choose i{
+    margin-top: 20px;
+    font-size: 30px;
+    margin-left: 30px;
+  }
   
   .container {
     max-width: 100%;
@@ -16,6 +28,16 @@
     margin: 0 auto;
   }
   
+  .mob-nav{
+    display:none ;
+  }
+  .mob-nav a{
+    text-decoration: none;
+    color: black;
+  }
+  .mob-nav li{
+    list-style: none;
+  }
   /* Mobile-specific styles */
   nav {
     display: flex;
@@ -179,6 +201,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -100px;
   }
   .mySlides {
     display: none;
@@ -216,66 +239,156 @@
     background-color:white;
   }
 
-  
-  /* .clients {
-    padding: 50px 0;
-    text-align: center;
-  }
-  
-  .clients p {
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .clients .client-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  .clients .client-logo img {
-    width: 80px;
-    margin: 10px;
-  }
-  
-  .contact {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    align-items: center;
-  }
-  
-  .contact p {
-    font-size: 20px;
-  }
-  
-  .contact form {
-    display: grid;
-    grid-gap: 10px;
-  }
-  
-  .contact input,
-  .contact textarea {
+  .clients img{
+    margin-top: -100px;
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
   }
   
-  .contact button {
-    background-color: blueviolet;
-    color: #fff;
-    padding: 10px 20px;
+
+  .contact{
+    display: flex;
+    flex-direction: column;
+    background-image: url(/assets/images/tet-bg.webp);
+    justify-content: space-around;
+    background-attachment: fixed;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 650px;
+}
+.contact input{
     border: none;
-    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+.con-left{
+    padding-top: 100px;
+    padding-left: 50px;
+}
+.con-left :first-child{
+    color: blueviolet;
+    font-size: 22px;
+}
+.con-left :nth-child(2){
+    font-size: 35px;
+    font-weight: 900;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.con-left :nth-child(3){
+    font-size: 18px;
+}
+.con-left :nth-child(4){
+    padding-top: 15px;
+    font-size: 18px;
+}
+.con-icons i{
+    padding-right: 20px;
+}
+.con-right{
+  padding-top: 60px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.con-right label{
+  display: flex;
+  margin: 30px 0;
+  justify-content: left;
+}
+.con-right button{
+    height: 45px;
+    width: 135px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    margin-top: 40px;
+    background-color: blueviolet;
+    color: white;
+}
+
+.google-map {
+  margin-top: 200px;
+    margin-bottom:480px;
+    position: relative;
   }
   
-  footer {
-    background-color: #f6f6f6;
-    padding: 20px;
-    text-align: center;
-    font-size: 14px;
+  .google-map iframe {
+    height: 250px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding-bottom: 0;
+    position: absolute;
   }
-   */
+
+  footer{
+    text-align: center;
+    padding-bottom: 0;
+    margin-top: auto;
+    padding-bottom: 20px
+
+  }
+  footer a{
+    color: black;
+  }
+
+    /* Live Chat Section */
+    .open-button {
+      background-color: rgb(30, 48, 80);
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      opacity: 0.8;
+      position: fixed;
+      bottom: 23px;
+      right: 28px;
+      height: 100px;
+      width: 100px;
+    }
+    .chat-popup {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      right: 15px;
+      border: 3px solid #f1f1f1;
+      z-index: 9;
+    }
+    .form-container {
+      max-width: 300px;
+      padding: 10px;
+      background-color: white;
+    }
+    .form-container textarea {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      border: none;
+      background: #f1f1f1;
+      resize: none;
+      min-height: 200px;
+    }
+    .form-container textarea:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+    .form-container .btn {
+      background-color: rgb(30, 48, 80);
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom:10px;
+      opacity: 0.8;
+    }
+    .form-container .cancel {
+      background-color:#ddd;
+      color: black;
+    }
+    .form-container .btn:hover, .open-button:hover {
+      opacity: 1;
+    }
